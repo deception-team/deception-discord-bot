@@ -28,4 +28,4 @@ function validateConfig(config: BotConfig) {
     throw new Error("You need to specify your Discord bot token!");
   }
 }
-/** Hallo ich der Jakob und esse Meerschweinchen */
+/** Hallo ich der Jakob und esse Meerschweinchen und bin gay */
