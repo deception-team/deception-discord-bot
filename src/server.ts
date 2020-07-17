@@ -14,10 +14,10 @@ client.on("ready", () => {
 
 client.on("message", async (message: Message) => {
   if (message.content == "!ping") {
-    await message.reply("Pong");
+    await message.channel.send("Pong");
   }
-  if (message.content == "Jakob?"){
-    await message.reply("Hundesohn!🐶");
+  if (message.content == "Jakob?") {
+    await message.channel.send("Hundesohn!🐶");
   }
   // commandHandler.handleMessage(message);
 });
