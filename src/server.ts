@@ -12,9 +12,12 @@ client.on("ready", () => {
   console.log("Bot has started");
 });
 
-client.on("message", (message: Message) => {
+client.on("message", async (message: Message) => {
   if (message.content == "!ping") {
-    message.reply("Pong")
+    await message.reply("Pong");
+  }
+  if (message.content == "Jakob?"){
+    await message.reply("Hundesohn!🐶");
   }
   // commandHandler.handleMessage(message);
 });
