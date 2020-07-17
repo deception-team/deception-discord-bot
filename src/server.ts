@@ -13,7 +13,10 @@ client.on("ready", () => {
 });
 
 client.on("message", (message: Message) => {
-  commandHandler.handleMessage(message);
+  if (message.content == "!ping") {
+    message.reply("Pong")
+  }
+  // commandHandler.handleMessage(message);
 });
 
 client.on("error", e => {
