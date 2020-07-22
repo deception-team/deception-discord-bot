@@ -1,4 +1,4 @@
-import Discord, { Message } from "discord.js";
+import Discord, { Message, UserProfile, User, MessageEmbedAuthor } from "discord.js";
 import { config, BotConfig } from "./config/config";
 import { CommandHandler } from "./command_handler";
 
@@ -18,6 +18,9 @@ client.on("message", async (message: Message) => {
   }
   if (message.content == "Jakob?") {
     await message.channel.send("Hundesohn!🐶");
+  }
+  if(UserProfile.name == "jonasemre" ){
+    await message.channel.send("Hää?");
   }
   // commandHandler.handleMessage(message);
 });
